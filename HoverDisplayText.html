@@ -19,11 +19,16 @@
 <div class="myDIV">Hover here.</div>
 <div class="hide">I am shown when someone hovers over the div above.</div>
 
+<div class="myDIV">Hover here.</div>
+<div class="hide">I am shown when someone hovers over the div above.</div>
+
+
 </body>
 
-<script src="https://static.qa.katalon.com/libs/traffic-agent.js"></script>
-<script>
-    window.startTrafficAgent();
+<script id="katalonTrafficAgent" async defer src="https://static.staging.katalon.com/libs/traffic-agent/v1/traffic-agent.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    document.getElementById('katalonTrafficAgent').addEventListener('load', () => {
+        startTrafficAgent("KA-152590-2") });
 </script>
 
 </html>
